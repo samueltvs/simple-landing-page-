@@ -1,22 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{margin: 0; padding: 0; overflow-x: hidden;}
+*{margin: 0; padding: 0; overflow-x: hidden;overflow-y: hidden; }
 
-body{ background-color: #f7f8fa; font-family: "Poppins", serif; }
+body{ background-color: #f7f8fa; font-family: "Poppins", Regular; }
 
-.information{ text-align: center ;}
+.information{ text-align: center; margin-top: 10%;}
 
 .container{ max-width: 1280px; margin: auto;}
 
-.flex{display: flex; align-items: center; justify-content: space-between;}
+.flex {display: flex; align-items: center; justify-content: space-between;}
 
-.header{ position: fixed; top: 0; left: 0;  width: 100%; padding: 60px 5%;}
+.information h1 {font-weight: 800; font-size: 32px;}
 
-header ul
-{
-     list-style-type: none;  /* remove the "little balls".*/
-}
 
-header ul li { display: inline-block; margin-right: 20px;}
+.information p {font-weight: 400; font-size: 16px; color: #9c9b9f;}
 
-header ul li a { color: #231f29; text-decoration: none; font-weight: 600; font-size: 15px;}
+
+header {
+     display: flex;
+     align-items: center; 
+     justify-content: space-between; 
+     position: fixed;
+     top: 3%;
+     left: 3%;
+     width: 100%;
+     padding: 0px 5%; 
+ }
+ 
+ #logotipo {
+     height: 50px; 
+     width: auto; 
+ }
+ 
+ nav ul {
+     display: flex; 
+     gap: 30px; 
+ }
+ 
+ nav ul li {
+     list-style: none;
+ }
+ 
+ nav ul li a {
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 15px;
+     color: #231f29;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ nav ul li a:hover{
+     color: #1998ff;
+ }
+
+
+.home {
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 15px;
+     color: #fd5356;
+ }
+
+ 
+ .flex {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     width: 100%;
+ }
+ 
+
+/* Buttons confuguration */
+
+button {
+     padding: 10px 20px; 
+     font-size: 13px; 
+     font-weight: 300; 
+     border: none; 
+     border-radius: 5px; 
+     cursor: pointer; 
+     transition: 0.3s;
+ }
+ 
+ .btn-contact {
+     margin-left: 150px;
+ }
+
+
+ .btn-contact button {
+     background-color: #1998ff; 
+     color: white; 
+ }
+ 
+ .btn-contact button:hover {
+     background-color: #e0484d; 
+ }
+
+.get{
+     background-color: #fec4af;
+     color: #df8869;
+     margin: 10px;
+ }
+
+ .learn {
+     background-color: #b7eddd;
+     color: #6abea5;
+     margin: 10px;
+ }
+
+ .get:hover {
+     background-color: #785858; 
+     color: white;
+ }
+
+ .learn:hover{
+     background-color: #4c947e;; 
+     color: white;
+ }
+
+ btn-contact{
+     background-color: #fec4af;
+     color: #df8869;
+     margin: 10px;
+ }
